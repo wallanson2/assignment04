@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+/*beginning of top page banner*/
+.header-banner {
+  display: in-line block;
+  width: 100%;
+  background-color: #383838;
+}
+.header-banner img {
+  height: 50px;
+  vertical-align: middle;
+
+}
+.header-banner #logo {
+  margin: 0;
+}
+.header-banner #label {
+  margin-right: 0;
+}
+/*beginning of buttons*/
+.buttons {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  background: lightgrey;
+  height: 30px;
+
+}
+.buttons button {
+  background-color: salmon;
+  padding-left: 5px;
+  padding-top: 7px;
+  margin-left: 5px;
+
+}
+.buttons a {
+  text-decoration: none;
+
+}
+/*beginning of left side text boxes*/
+.text-container {
+  width: 60%;
+  margin-left: 30px;
+  margin-right: 0;
+  display: inline-block;
+}
+
+
+}
+.floating-box {
+  display: inline-block;
+}
+
+.text-container2 {
+  width: 70%;
+  margin-left: 30px;
+}
+
+/*#campus-link {
+  width: 50%;
+}*/
+#campus-link > h2 {
+  width: 100%;
+
+}
+.campus-text {
+  width: 40%;
+  display: inline-block;
+}
+#campus-image {
+  width:58%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#campus-image img {
+  width: 100%;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.glassell-school img {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.glassell-school p {
+  width: 58%;
+  display: inline-block;
+  text-align: left;
+  padding-left: 4px;
+  margin-top: 0;
+}
+/*beginning of upcoming events*/
+.upcoming-events-container {
+  width: 30%;
+  height: 360px;
+  margin-left: 20px;
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+}
+.upcoming-events-container  h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 3px;
+}
+.pic1 {
+  display: inline-block;
+  width: 30%;
+  margin-left: 4px;
+}
+.pic1-text {
+  display: inline-block;
+  width: 65%;
+  margin-top:  0px;
+  margin-left: 3px;
+  font-size: .8em;
+  vertical-align: top;
+}
+.pic2 {
+  display: inline-block;
+  width: 30%;
+  margin-left: 4px;
+  margin-top: 8px;
+}
+.pic2-text {
+  display: inline-block;
+  width: 65%;
+  margin-top:  0px;
+  margin-left: 3px;
+  font-size: .8em;
+  vertical-align: top;
+}
+.pic3 {
+  display: inline-block;
+  width: 30%;
+  margin-left: 4px;
+  margin-top: 8px;
+}
+.pic3-text {
+  display: inline-block;
+  width: 65%;
+  margin-top:  0px;
+  margin-left: 3px;
+  font-size: .8em;
+  vertical-align: top;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+
+  margin: 20px;
+}
+.footer ul li {
+  list-style: none;
+  display: inline;
+  font-size: .7em;
+  padding-right: 50px;
+}
