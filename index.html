@@ -10,16 +10,50 @@
     <div class="app-container">
       <!--this is my header-->
       <div class="header-banner">
-        <img id="logo" src="./mfah-logo.png"/>
-        <img id="label" src="./mfah-label.png"/>
-      </div>
+        <div class="header-box1"><img id="logo" src="./mfah-logo.png"/></div>
+        <div class="header-box2"><img id="label" src="./mfah-label.png"/></div>
+        <div class="drop-down-menu">
+          <button class="drop-down">
+            <a href="#">
+              <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+            </a>
+            <ul class="drop-nav">
+              <li><a href="#">Visit</li>
+              <li><a href="#">Collection</li>
+              <li><a href="#">Exhibition</li>
+              <li><a href="#">Calendar</li>
+              <li><a href="#">Films</li>
+              <li><a href="#">Learn</li>
+              <li><a href="#">Membership</li>
+              <li><a href="#">Give</li>
+              <li><a href="#">Research</li>
+              <li><a href="#">About</li>
+            </ul>
+          </button>
+        </div>
+        <div class="link-list-container">
+          <ul class="link-list">
+            <li><a href="#">Visit</li>
+            <li><a href="#">Collection</li>
+            <li><a href="#">Exhibition</li>
+            <li><a href="#">Calendar</li>
+            <li><a href="#">Films</li>
+            <li><a href="#">Learn</li>
+            <li><a href="#">Membership</li>
+            <li><a href="#">Give</li>
+            <li><a href="#">Research</li>
+            <li><a href="#">About</li>
+          </ul>
+        </div><!--end of link-list-container-->
+      </div><!--end of header-banner-->
         <div class="buttons">
           <a href="./home"><button>Home</button></a>
           <a href="./about"><button>About</button></a>
-          <a href="./history"><button>The MFAH: An Architectual History</button></a>
+          <a href="./history"><button id="history">The MFAH: An Architectual History</button></a>
         </div>
 
   <!--set up main div for left side-->
+  <div class="column-container">
       <div class="text-container">
         <div>
           <h1>The MFAH: An Architectural History</h1>
@@ -36,7 +70,7 @@
             <hr/>
         </div>
 
-  <!--div in a div in div -->
+        <!--div in a div in div -->
         <div class="campus-link-container">
           <div id="campus-link">
             <div>
@@ -46,75 +80,76 @@
               <p>The firm Steven Holl Architects is developing plans for a comprehensive project to create a new building for 20th- and 21st-century art and a new facility for the Glassell School of Art; those structures will link to the existing gallery builings by Ludwig Miles van der Rohe and Rafael Moneo, as well as the sculpture garden by Isamu Nofuchi, establishing a 14-acre public campus in the heart of Houston's Museum District.</p>
               <br/>
               <p><a href="./campus">Learn more about the campus.</a></p>
-            </div>
-            <div id="campus-image">
+            </div><!--close campus-text-->
+            <div class="campus-image">
               <img src="./MFAH-future-campus.jpg"/>
-            </div>
+            </div><!--close campus-image-->
             <hr/>
-          </div>
-        </div>
+          </div><!--close campus-link-->
+        </div><!--close campus-link-container-->
 
         <div class="glassell-school">
           <h2>Alfred C. Glassell School of Art</h2>
           <img src="mfah-glassell-school-of-art.jpg"/>
           <p><strong>Architect: Eugene Aubry of S. I. Morris and Associates<br/>Director: William C. Agee<br/>Year: 1979</strong><br/><br/>By the mid-1970s, the Museum needed a new facility for its school of art to accommodate the growing student body. Under the guidance of Museum director William C. Agee, and with a generous donation from Alfred Glassell, Jr., a plan for an approximately 42,000-square-foot building was drawn up by architects Eugene Aubry and R. Nolen Willis of the prominent Houston firm S. I. Morris and Associates. The building—a two-story space made from concrete and glass-block, and located one block north of the Museum—represented the first time that the school had a home of its own in its 52-year history. The Glassell School of Art opened to the public on January 13, 1979.</p>
+        </div><!--close glassell-school-->
 
-        </div>
       </div><!--closing div for main left side box-->
-
+      <!--begin upcoming events div-->
       <div class="upcoming-events-container">
         <div>
           <h3>upcoming events</h3>
         </div>
         <div class="pic1">
           <img src="mfah-upcoming-event-1-artspeak101.jpg"/>
-        </div>
+        </div><!--close pic1-->
         <div class="pic1-text">
           <p><strong>GALLERY TALKS/TOURS</strong><br/><br/>ArtSpeak 101<br/>Thursday 9.08 @ 1 p.m.</p>
-        </div>
+        </div><!--close pic1-text-->
 
         <div class="dotted-line"></div>
 
         <div class="pic2">
           <img src="./mfah-upcoming-event-2-photography-influence.jpg"/>
-        </div>
+        </div><!--close pic2-->
         <div class="pic2-text">
           <p><strong>GALLERY TALKS/TOURS</strong><br/><br/>Photography and Its Influence on the Visual Arts<br/>Thursday 9.08 @ 2 p.m.</p>
-        </div>
+        </div><!--close pic2-text-->
 
         <div class="dotted-line"></div>
 
         <div class="pic3">
           <img src="./mfah-upcoming-event-3-art-bite.jpg"/>
-        </div>
+        </div><!--close pic3-->
         <div class="pic3-text">
           <p><strong>GALLERY TALKS/TOURS</strong><br/><br/>Art Bite “Love, Romance, and Everything in Between”<br/>Thursday 9.08 @ 6:30 p.m.</p>
-        </div>
+        </div><!--close pic3-text-->
 
         <div class="dotted-line"></div>
 
         <div class="view-all">
           <p><a href="#">view all ></a></p>
+        </div><!--close view-all-->
+      </div><!--close upcoming-events-container-->
+  </div>
+
+    <!--begin footer-->
+    <div class="column-container footer">
+        <div>Main address<span> » </span>1001 Bissonnet, Houston, Texas 77005</div>
+        <div>MFAH Information Line<span> » </span>713.639.7300</div>
+        <div class="newsletter-link"><a href="#">Sign up for e-newsletters </a><span>»</span></div>
+        <div class="profile-link"><a href="#">MFAH Community Profile </a><span>»</span>
         </div>
-      </div>
+    </div><!--close footer-->
 
-      <div class="footer">
-        <ul>
-          <li>Main address<span> » </span>1001 Bissonnet, Houston, Texas 77005</li>
-          <li>MFAH Information Line<span> » </span>713.639.7300</li>
-          <li class="newsletter-link"><a href="#">Sign up for e-newsletters </a><span>»</span></li>
-          <li class="profile-link"><a href="#">MFAH Community Profile </a><span>»</span>
-          </li>
-        </Ul>
-      </div>
-
-      <div class="ticket-box">
-        <h4><i class="fa fa-ticket" aria-hidden="true"></i>Sign-Up For Ticket Info</h4>
-        <form>
-          <input type="text" name="search" placeholder="Enter Email Here"/>
-          <button class="ticket-box-button"><a href="#">@</a></button>
-        </form>
-      </div>
     </div><!--end of app-container-->
+    <!--begin fixed box-->
+    <div class="ticket-box">
+      <h4><i class="fa fa-ticket" aria-hidden="true"></i>Sign-Up For Ticket Info</h4>
+      <form>
+        <input type="text" name="search" placeholder="Enter Email Here"/>
+        <button class="ticket-box-button"><a href="#">@</a></button>
+      </form>
+    </div><!--close ticket-box-->
   </body>
 </html>

@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -5,33 +6,128 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   background-color: grey;
+  width: 100%;
 }
 
 .app-container {
   background-color: white;
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
+
+.column-container{
+   font-size: 0;
+}
+
+.column-container > * {
+  font-size: medium;
+  display: inline-block;
+  vertical-align: top;
+}
+
 /*beginning of top page banner*/
 .header-banner {
-  display: in-line block;
-  width: 100%;
-  background-color: #383838;
-  font-size: 0;
-}
-.header-banner img {
+  display: inline block;
   height: 50px;
-  vertical-align: middle;
+  background-color: #383838;
+  height: 50px;
 }
-.header-banner #logo {
+.header-box1,
+.header-box2 {
+  display: inline-block;
+}
+.header-box1 img {
+  height: 50px;
+  /*width: relative;*/
+  display: inline-block;
+}
+#logo {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 10px;
 }
-.header-banner #label {
-  margin-right: 0;
+
+#label {
+ display: none;
 }
+
+
+/*header bar drop down menu*/
+.drop-down-menu {
+  height: 50px;
+  vertical-align: top;
+  display: inline-block;
+  float: right;
+}
+.drop-down {
+  background-color: #383838;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  position: relative;;
+}
+.drop-down i {
+  color: white;
+  margin: 3px auto;
+}
+.drop-down i:hover,
+.drop-nav a:hover {
+  color: red;
+}
+.drop-nav {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  background: blue;
+  display: none;
+  padding-left: 0;
+}
+.drop-nav li {
+  list-style: none;
+  text-align: center;
+  width: 100px;
+  padding-bottom: 8px;
+  margin: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+.drop-nav a {
+  text-decoration: none;
+  color: white;
+}
+.drop-down:hover > .drop-nav {
+  display: block;
+}
+
+
+/*header bar link list*/
+.link-list-container {
+  display: none;
+  height: 20px;
+}
+.link-list {
+  list-style-type: none;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.link-list li {
+  height: 20px;
+  display: inline-block;
+  list-style-type: none;
+}
+.link-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  padding-left: 5px;
+}
+.link-list li a:hover {
+  color: lightblue;
+}
+
 
 /*beginning of buttons*/
 .buttons {
@@ -39,13 +135,13 @@ body {
   margin-right: 30px;
   margin-top: 10px;
   background: lightgrey;
-  height: 30px;
 }
 .buttons button {
   background-color: salmon;
   padding-left: 5px;
   padding-top: 7px;
   margin-left: 5px;
+  margin-right: 5px;
 }
 .buttons a {
   text-decoration: none;
@@ -53,7 +149,7 @@ body {
 .buttons a button {
   color: blue;
 }
-/*usage of the hover command*/
+
 .buttons button:hover  {
   background-color: blue;
   color:white;
@@ -62,62 +158,63 @@ body {
 
 /*left side container column*/
 .text-container {
-  width: 60%;
-  margin-left: 30px;
-  margin-right: 0;
-  display: inline-block;
+  width: 100%;
+  margin: auto;
+  padding: 5%;
 }
 
-/*campus div in a div*/
+/*campus info*/
 #campus-link div h2 {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 .campus-text {
-  width: 40%;
-  display: inline-block;
+  width: 100%;
+  margin: auto;
+  display: block;
 }
+
 .campus-text a:hover {
   color: red;
 }
-#campus-image {
-  width:58%;
-  display: inline-block;
+.campus-image {
+  width:100%;
+  display: block;
   vertical-align: top;
 }
-#campus-image img {
+.campus-image img {
   width: 100%;
-  display: inline-block;
+
   padding-left: 10px;
   padding-top: 20px;
 }
 
-/*glassell school div in a div*/
+/*glassell school info*/
+.glassell-school {
+
+}
 .glassell-school img {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top;
+  width: 100%;
+  display: block;
+
 }
 .glassell-school p {
-  width: 58%;
-  display: inline-block;
+  width: 100%;
   text-align: left;
   padding-left: 8px;
   margin-top: 0;
+  display: block;
 }
 
 /*beginning of upcoming events*/
 .upcoming-events-container {
-  width: 30%;
-  height: 360px;
-  margin-left: 20px;
-  margin-top: 30px;
+  width: 100%;
+  padding: 5%;
   display: inline-block;
-  vertical-align: top;
 }
 
-/*setting up main div for right side box*/
+/*beginning upcoming events*/
 .upcoming-events-container  h3 {
   text-align: left;
   margin-bottom: 20px;
@@ -138,6 +235,7 @@ body {
 }
 .pic1-text p{
   margin-top: 0;
+  padding: 3px;
 }
 
 .dotted-line {
@@ -160,6 +258,9 @@ body {
   font-size: .8em;
   vertical-align: top;
 }
+.pic2-text p {
+  padding: 3px;
+}
 .pic3 {
   display: inline-block;
   width: 30%;
@@ -173,6 +274,9 @@ body {
   margin-left: 3px;
   font-size: .8em;
   vertical-align: top;
+}
+.pic3-text p {
+  padding: 3px;
 }
 
 /*new div for view all button*/
@@ -190,18 +294,14 @@ body {
 
 /*set up for footer div*/
 .footer {
-  height: 50px;
-  width: 90%;
   border-top: 1px solid lightgrey;
-  margin: 20px auto;
 }
-.footer ul li {
-  list-style: none;
-  display: inline;
-  padding-right: 10px;
-  font-size: .6em;
+.footer > div {
+  width: 100%;
+  padding: 5px;
+  font-size: 11px;
 }
-.footer ul li span {
+.footer div span {
   color:red;
 }
 .newsletter-link a{
@@ -220,38 +320,138 @@ body {
   color:blue;
 }
 
-/*setup for fixed box*/
-.ticket-box {
-  position: fixed;
-  bottom: 10%;
-  right: 200px;
-  background: #3a539b;
-  width: 25%;
+@media screen and (max-width: 768px) {
+  .ticket-box {
+    display: none;
+  }
 }
-.ticket-box input {
-  width: 80%;
-  padding: 0 10px 0 10px;
+
+@media screen and (min-width: 890px) {
+  .header-banner div #label {
+    margin-right: 0;
+    display: inline-block;
+  }
 }
-.ticket-box form {
-  padding: 0 20px 20px 20px;
-}
-.ticket-box h4 {
-  color: white;
-  text-align: center;
-}
-.ticket-box-button {
-  background-color: blue;
-}
-.ticket-box-button a {
-  color: white;
-}
-.ticket-box-button:hover {
-  background-color: red;
-}
-.ticket-box-button a:hover {
-  color: blue;
-}
-.ticket-box i {
-  margin-right: 20px;
-  font-size: 1.5em;
+
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  .header-banner {
+    width: 100%;
+    height: 70px;
+  }
+  .header-banner div img {
+    height: 50px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .header-banner div #logo {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+
+
+  .buttons button {
+    background-color: salmon;
+    padding-left: 5px;
+    padding-top: 7px;
+    margin-left: 5px;
+  }
+
+
+  .link-list-container {
+    display: block;
+  }
+
+  .text-container {
+    width: 60%;
+    display: inline-block;
+  }
+
+
+  .campus-text {
+    width: 40%;
+    display: inline-block;
+  }
+  .campus-image {
+    width:58%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+  .glassell-school img {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .glassell-school p {
+    width: 58%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 8px;
+    margin-top: 0;
+  }
+  .upcoming-events-container {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .pic1-text {
+    display: inline-block;
+    width: 65%;
+    margin-top:  0px;
+    margin-left: 3px;
+    font-size: .8em;
+    vertical-align: top;
+  }
+  .footer > div {
+    width: 25%;
+  }
+
+  /*setup for fixed box*/
+  .ticket-box {
+    position: fixed;
+    bottom: 10%;
+    right: 100px;
+    background: #3a539b;
+    width: 25%;
+  }
+  .ticket-box input {
+    width: 80%;
+    padding: 0 10px 0 10px;
+  }
+  .ticket-box form {
+    padding: 0 20px 20px 20px;
+  }
+  .ticket-box h4 {
+    color: white;
+    text-align: center;
+  }
+  .ticket-box-button {
+    background-color: blue;
+  }
+  .ticket-box-button a {
+    color: white;
+  }
+  .ticket-box-button:hover {
+    background-color: red;
+  }
+  .ticket-box-button a:hover {
+    color: blue;
+  }
+  .ticket-box i {
+    margin-right: 20px;
+    font-size: 1.5em;
+  }
+  .drop-down-menu {
+    display: none;
+    float: clear;
+  }
 }
